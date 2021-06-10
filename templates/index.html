@@ -242,6 +242,16 @@ along with Waqtu.  If not, see <https://www.gnu.org/licenses/>.
             let isha = document.getElementById('isha');
             isha.innerText = `${location.data.timings.Isha}`
         }
+
+	//get & Display local time and day
+        setInterval(()=>{
+            const current_time = moment();
+            const local_day = current_time.format('dddd'); 
+            const local_time = current_time.format('LTS');
+            document.getElementById("current_time").innerHTML = local_time;
+            document.getElementById("local_day").innerHTML = local_day;
+            //console.log(local_time);
+            }), 1000;
               
 /*
         //Set deadline
