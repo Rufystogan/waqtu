@@ -216,6 +216,10 @@ along with Waqtu.  If not, see <https://www.gnu.org/licenses/>.
             weatherType.innerText = weather.weather[0].main;
 
             position.innerHTML = `${weather.name}`;
+	    //changeable icon
+            let locationIcon = document.querySelector('.weather-icon');
+            var icon = ("<img src='static/icon/" + weather.weather[0].icon + ".png'>");
+            locationIcon.innerHTML = icon;
         }       
                 
         //Show prayer times
