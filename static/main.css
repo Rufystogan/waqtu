@@ -243,3 +243,10 @@
 .footer a{
     color: #2b3990;
 }
+
+/*Du'a Image Selection*/
+#duaDisplay img{
+    text-align: center;
+    height: 400px;
+    width: auto;
+}
